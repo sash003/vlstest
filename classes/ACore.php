@@ -19,7 +19,7 @@ class ACore {
           в файле '.$err->getFile().", строка ".$err->getLine(); 
     exit; 
 		}
-		$this->db->exec('SET NAMES ' . $arrConfig['dbcharset'] . 'COLLATE ' . $arrConfig['dbcollation']);
+		$this->db->exec('SET NAMES ' . $arrConfig['dbcharset'] . ' COLLATE ' . $arrConfig['dbcollation']);
     }
     
     public function get_phones(){
