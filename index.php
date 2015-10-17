@@ -25,7 +25,7 @@ function autoload($class){
 }
 spl_autoload_register('autoload');
 
-$obj = new ACore();
+$obj = new DBCore();
 
 ?>
 
