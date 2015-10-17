@@ -1,25 +1,16 @@
 <?php
 
-/*
-Третья задача: Использование API
-
-Ваша задача, чтобы создать направление движения обслуживание. Главная должна содержать два текстовых поля ("от точки" и "точки") и кнопку отправки. В результате вы должны показать текстовое описание проезда без карты. Вы можете использовать любую услугу API вы хотите.
-
-Например: Едем прямо на Ярцевский, проезжаем 99.27 м, Едем прямо на Крылатская улица, проезжаем 20.41 м,..
-
-*/
-
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-header ("Content-Type:text/html;charset=UTF8", false);
+  header ("Content-Type:text/html;charset=UTF8", false);
   header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
   header("Last-Modified: " . gmdate("D, d M Y H:i:s")." GMT");
   header("Cache-Control: no-cache, must-revalidate");
   header("Cache-Control: post-check=0,pre-check=0", false);
   header("Cache-Control: max-age=0", false);
   header("Pragma: no-cache");
-mb_internal_encoding('utf-8');
+  mb_internal_encoding('utf-8');
 
 define('ROOT', __DIR__ . '/');
 
@@ -96,16 +87,12 @@ $obj = new ACore();
 
 
 
-<div id="YMapsID" style="width:600px;height:400px; display: none; float: left;"></div>
+<div id="YMapsID" style="width:600px;height:400px; display: block; float: left;"></div>
 <div id="route" style="widrh: 400px; float: left; padding-left: 11px;"></div>
 
 <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
 <script src="js/script.js" type="text/javascript"></script>
 
-<script>
-
-    
-</script>
 </body>
 </html>
 
