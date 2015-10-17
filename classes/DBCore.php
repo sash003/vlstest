@@ -1,10 +1,13 @@
 <?php
 
 /**
+* 
+* 
+* 
 * @package classes
 * @author = sash 
 */
-class ACore {
+class DBCore {
     
     protected $db;
     
@@ -29,8 +32,26 @@ class ACore {
     exit; 
 		}
 		$this->db->exec('SET NAMES ' . $arrConfig['dbcharset'] . ' COLLATE ' . $arrConfig['dbcollation']);
+        
+       //echo $this->checkTableExists(); //
+        
     }
     
+    
+    protected function checkTableExists($table){
+        
+        $exists = $this->db->query("SELECT * FROM `$table` LIMIT 1");
+        if($exists){
+          return true;   
+        }
+    }
+    
+    
+    
+    
+    /**
+    * @return array список телефонов
+    */
     public function get_phones(){
         
         $sql = "SELECT `Phone` FROM `$this->tablePhones` WHERE `Phone` REGEXP '[0-9]+'";
@@ -39,12 +60,15 @@ class ACore {
         
         if($result){
             
-           $this->createTable($this->rightPhonesTable,
+            // прверка существования таблицы
+            $exists = $this->checkTableExists($this->rightPhonesTable);
+            // создание таблицы с правилльными номерами телефонов
+            $this->createTable($this->rightPhonesTable,
                                'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                                 Phone VARCHAR(12),
                                 INDEX(Phone(12))',
                                 'MyISAM');
-            
+                    
             $phones = array();
             
             while($row = $result->fetch(PDO::FETCH_ASSOC)) {
@@ -52,7 +76,9 @@ class ACore {
                $phone = preg_replace('/[^\d]/', '', $row['Phone']);
                if(preg_match('/^\d{11}$/', $phone)){
                    $righthoneNum = "+$phone";
-                   $this->_insert_($this->rightPhonesTable, 'Phone', $righthoneNum);
+                   if(!$exists){
+                       $this->_insert_($this->rightPhonesTable, 'Phone', $righthoneNum);
+                   }                   
                    $phones[] = $righthoneNum;
                }
                
@@ -124,6 +150,36 @@ class ACore {
         return $stmt->execute();
     }
     
+    
+    public function _update_($fields, $values, $condition){
+    
+        $fields_ = explode(',', $fields);
+        $fields_len = count($fields_);
+        $values_ = explode(',', $values);
+        $values_len = count($values_);
+        if($fields_len !== $values_len){
+            exit('Количество полей и значений не совпадает');
+        }
+        $prepare = '';
+        for($i = 0; $i < $fields_len; $i++){
+            $prepare  .= $fields_[$i]."=?,";
+        }
+        $prepares = substr($prepare, 0, mb_strlen($prepare)-1);
+        $sql = "UPDATE `".$this->tableName."` SET $prepares WHERE $condition";
+            $stmt = $this->db->prepare($sql);
+    // обезвреживание данных
+        for($i = 0; $i < $values_len; $i++){
+            $value = trim($values_[$i]);
+            if(preg_match('/^\d+$/', $value)){
+                $stmt->bindValue($i+1, $value, PDO::PARAM_INT);
+            }else{
+                 $stmt->bindValue($i+1, $value, PDO::PARAM_STR);
+                 }   
+     }
+        return $stmt->execute();
+    }
+    
+    
     /**
     * 
     * Создаёт новую таблицу, если она не существует
@@ -132,7 +188,7 @@ class ACore {
     * @param string $query - запрос 
     * @param string $engine - тип таблицы
     * 
-    * @return
+    * @return true
     */
     protected function createTable($name, $query, $engine){
         $result = $this->db->query("CREATE TABLE IF NOT EXISTS $name($query) ENGINE=$engine CHARACTER SET=UTF8");
