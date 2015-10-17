@@ -2,12 +2,21 @@
 
 /**
 * @package classes
+* @author = sash 
 */
 class ACore {
     
     protected $db;
-    protected $tablePhones = 'task1';
     
+    protected $tablePhones = 'task1';
+    protected $rightPhonesTable = 'rightPhones';
+    
+    protected $tableOrders = 'task2';
+    
+    /**
+    * Конструктор класса, устанавливает соединение с бд и его параметры
+    * @return null
+    */
     public function __construct(){
         
        require_once ROOT . 'config.php';
@@ -30,13 +39,21 @@ class ACore {
         
         if($result){
             
+           $this->createTable($this->rightPhonesTable,
+                               'id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+                                Phone VARCHAR(12),
+                                INDEX(Phone(12))',
+                                'MyISAM');
+            
             $phones = array();
             
             while($row = $result->fetch(PDO::FETCH_ASSOC)) {
 
                $phone = preg_replace('/[^\d]/', '', $row['Phone']);
                if(preg_match('/^\d{11}$/', $phone)){
-                   $phones[] = "+$phone";
+                   $righthoneNum = "+$phone";
+                   $this->_insert_($this->rightPhonesTable, 'Phone', $righthoneNum);
+                   $phones[] = $righthoneNum;
                }
                
             }
@@ -48,13 +65,15 @@ class ACore {
     
     public function get_order(){
         
-        $sql = "SELECT * FROM `task2` order by `phone`";
+        $sql = "SELECT * FROM `$this->tableOrders` order by `phone`";
         
         $result = $this->db->query($sql);
         
         $orders  = array();
         
         if($result){
+            
+            
             while($row = $result->fetch(PDO::FETCH_ASSOC)) {
 
                $orders[] = $row;
@@ -69,6 +88,63 @@ class ACore {
         
     }
     
+    
+    /**
+    * 
+    * Функция разбивает переданные в виде строк параметры $fields и $values по запятой в массивы. если количества массивов не совпадают, генерируется ушибка. Далее готовится строка подготовленного запроса, данные обезвреживаются и запрос выполняется
+    * 
+    * @param string $tableName
+    * @param string $fields
+    * @param string $values
+    * 
+    * @return результат выполнения, true или false
+    */
+    protected function _insert_($tableName, $fields, $values){
+        $fields_ = explode(',', $fields);
+        $fields_len = count($fields_);
+        $values_ = explode(',', $values);
+        $values_len = count($values_);
+        if($fields_len !== $values_len){
+            throw new Exception('Количество полей и значений не совпадает');
+        }
+        $prepare = str_repeat('?,', $fields_len);
+        $prepares = substr($prepare, 0, mb_strlen($prepare)-1);
+        $sql = "INSERT INTO `$tableName` ($fields) VALUES ($prepares)";
+        $stmt = $this->db->prepare($sql);
+         // обезвреживание данных
+        for($i = 0; $i < $values_len; $i++){
+            $value = trim($values_[$i]);
+            if(preg_match('/^\d+$/', $value)){
+                $stmt->bindValue($i+1, $value, \PDO::PARAM_INT);
+            }
+            else{
+                 $stmt->bindValue($i+1, $value, \PDO::PARAM_STR);
+                }   
+        }
+        return $stmt->execute();
+    }
+    
+    /**
+    * 
+    * Создаёт новую таблицу, если она не существует
+    * 
+    * @param string $name - имя таблицы
+    * @param string $query - запрос 
+    * @param string $engine - тип таблицы
+    * 
+    * @return
+    */
+    protected function createTable($name, $query, $engine){
+        $result = $this->db->query("CREATE TABLE IF NOT EXISTS $name($query) ENGINE=$engine CHARACTER SET=UTF8");
+        if($result){
+            return true;
+        }
+        return false;
+    }
+    
+    /**
+    * Закрывает соединение с бд 
+    */
     function __destruct(){
         $this->db = null;
     }
