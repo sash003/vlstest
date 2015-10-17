@@ -87,7 +87,7 @@ $obj = new ACore();
 
 
 
-<div id="YMapsID" style="width:600px;height:400px; display: block; float: left;"></div>
+<div id="YMapsID" style="width:600px;height:400px; display: none; float: left;"></div>
 <div id="route" style="widrh: 400px; float: left; padding-left: 11px;"></div>
 
 <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
