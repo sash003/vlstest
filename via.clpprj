@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\OpenServer\domains\vlstest\via.clpprj">
+	<settings><PM_URL><![CDATA[C:/OpenServer/domains/symfony2/]]></PM_URL><PM_HOME_URL><![CDATA[C:/OpenServer/domains/symfony2/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="C:\OpenServer\domains\vlstest\config.php"/>
+		<file name="C:\OpenServer\domains\vlstest\index.php"/>
+		<file name="C:\OpenServer\domains\vlstest\.htaccess"/>
+		<file name="C:\OpenServer\domains\vlstest\classes\ACore.php"/>
+	</lastopfiles>
+	<errors version="5.3">
+	</errors>
+	<codestructure version="5.0">
+		<phptree>
+			<treenode node="ROOT;PHP:PHP Word;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;23;12;23;;;;vpos;;v;;r__DIR__ . '/';;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="ACore;PHP:Class Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f0;5;1;65;;;;vpos;;v;;r&#xA;Description&#xA;      package classes;;d12,5;;b0,0;;m">
+				<treenode node="__construct;PHP:Function Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f11;10;5;22;;;;vpos;;v;;r;;d33,10;;b1,0;;m">
+					<treenode node="arrConfig;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f38;15;48;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="err;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f25;16;29;16;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f3;15;8;15;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="get_order;PHP:Function Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f11;42;5;63;;;;vpos;;v;;r;;d31,42;;b1,0;;m">
+					<treenode node="orders;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f8;48;15;48;;;;vposarray;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f8;46;15;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="row;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f18;51;22;51;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f8;44;12;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f18;46;23;46;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="get_phones;PHP:Function Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f11;24;5;40;;;;vpos;;v;;r;;d32,24;;b1,0;;m">
+					<treenode node="phone;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f15;33;21;33;;;;vposmixed;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="result;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f8;28;15;28;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="row;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f18;31;22;31;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="sql;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f8;26;12;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+					<treenode node="this;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f37;26;42;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="db;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f14;7;17;7;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+				<treenode node="tablePhones;PHP:Var Name;C:\OpenServer\domains\vlstest\classes\Codelobster0.php;f14;8;26;8;;;;vpos;;v;;r;;d-1,-1;;b2,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="autoload;PHP:Function Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f0;25;1;27;;;;vpos;;v;;r;;d25,25;;b0,0;;mclass;;p">
+				<treenode node="class;PHP:Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f18;25;24;25;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="arrConfig;PHP:Var Name;C:\OpenServer\domains\vlstest\config.php;f0;2;10;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="obj;PHP:Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f0;30;4;30;;;;vposACore;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="order;PHP:Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f24;66;30;66;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="orders;PHP:Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f5;65;12;65;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+		</phptree>
+		<jstree>
+			<treenode node="addEvent;JS:Function Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f0;175;1;183;;;;vpos;;v;;r;;d45,175;;b0,0;;melem;;ptype;;phandler;;pparam;;p">
+				<treenode node="elem;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f18;175;22;175;;C:\OpenServer\domains\vlstest\Codelobster0.php;f18;175;22;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="handler;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f30;175;37;175;;C:\OpenServer\domains\vlstest\Codelobster0.php;f30;175;37;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="param;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f39;175;44;175;;C:\OpenServer\domains\vlstest\Codelobster0.php;f39;175;44;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+				<treenode node="type;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f24;175;28;175;;C:\OpenServer\domains\vlstest\Codelobster0.php;f24;175;28;175;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="preventdefault;JS:Function Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f0;167;1;172;;;;vpos;;v;;r;;d26,167;;b0,0;;me;;p">
+				<treenode node="e;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f24;167;25;167;;C:\OpenServer\domains\vlstest\Codelobster0.php;f24;167;25;167;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="returnValue;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f11;170;22;170;;C:\OpenServer\domains\vlstest\Codelobster0.php;f11;170;22;170;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					</treenode>
+				</treenode>
+				<treenode node="window;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;168;19;168;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;168;19;168;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				</treenode>
+			</treenode>
+			<treenode node="city;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;115;12;115;;;;vposDOMElement;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="d;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;112;9;112;;;;vposDOMDocument;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="document;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f12;112;20;112;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="Element;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f0;185;7;185;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+				<treenode node="prototype;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;185;17;185;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+					<treenode node="html;JS:Function Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f18;193;1;199;;;;vpos;;v;;r;;d39,286;;b0,0;;mhtml;;p">
+						<treenode node="html;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;204;38;204;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;205;38;205;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;191;38;191;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;192;38;192;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f34;193;38;193;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="innerHTML;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;206;22;206;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;207;22;207;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;193;22;193;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;194;22;194;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;C:\OpenServer\domains\vlstest\Codelobster0.php;f13;195;22;195;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+					<treenode node="val;JS:Function Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f18;185;1;191;;;;vpos;;v;;r;;d37,185;;b0,0;;mval;;p">
+						<treenode node="val;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f33;185;36;185;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+						<treenode node="value;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f14;187;19;187;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+						</treenode>
+					</treenode>
+				</treenode>
+			</treenode>
+			<treenode node="first;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;113;13;113;;;;vposDOMElement;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="routeShow;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;117;17;117;;;;vposDOMElement;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="second;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;114;14;114;;;;vposDOMElement;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="show;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;116;12;116;;;;vposDOMElement;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+			<treenode node="YMaps;JS:JS Var Name;C:\OpenServer\domains\vlstest\Codelobster0.php;f8;93;13;93;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+			</treenode>
+		</jstree>
+		<scsstree>
+		</scsstree>
+		<lesstree>
+		</lesstree>
+	</codestructure><cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<filescache>
+		<file name="C:\OpenServer\domains\vlstest\classes\ACore.php" crc="1399412691"/>
+		<file name="C:\OpenServer\domains\vlstest\index.php" crc="-2074035919"/>
+		<file name="C:\OpenServer\domains\vlstest\config.php" crc="-1346668283"/>
+		<file name="C:\OpenServer\domains\vlstest\.htaccess" crc="1167621333"/>
+	</filescache>
+</project>
