@@ -69,4 +69,8 @@ class ACore {
         
     }
     
+    function __destruct(){
+        $this->db = null;
+    }
+    
 }
