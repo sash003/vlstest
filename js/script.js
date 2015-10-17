@@ -63,7 +63,15 @@ YMaps.Events.observe(router, router.Events.Success, function () {
    
    for (var i=0; i < route.getNumRouteSegments(); i++) {
       var segment = route.getRouteSegment(i);
-      itineraryList.push('Едем ' + action[segment.getAction()] + " на " + segment.getStreet() + ', проезжаем ' + segment.getDistance() + ' м.');
+      
+      if(action[segment.getAction()]){
+          way = action[segment.getAction()];
+      }
+      
+      if(segment.getStreet()){
+          Street = ' на ' + segment.getStreet();
+      }
+      itineraryList.push('Едем ' + way + Street + ', проезжаем ' + segment.getDistance() + ' м.');
    }
    
    itineraryList.push('Останавливаемся.');
